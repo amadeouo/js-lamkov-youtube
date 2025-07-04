@@ -190,6 +190,7 @@ const { name: adminName } = user
 
 // Значение по умолчанию для деструктуризации
 const { age = 'не указан' } = userr
+const { age: userAge = 'не указан'} = useer
 
 
 // Остаточные или rest-параметры
