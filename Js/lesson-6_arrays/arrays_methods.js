@@ -53,8 +53,8 @@ console.log(users.findIndex((user, index, array) => { // поиск по эле�
     }
 }))
 console.log(users.findIndex((user) => user.name === 'Vasiliy')) // упрощенная запись
-console.log(users.findIndex(({ user }) => name === 'Vasiliy')) // еще более упрощенная запись, но лучше прошлая
-console.log(users.findLastIndex(({user}) => name === 'Vasiliy')) // можно и с последнего
+console.log(users.findIndex(({ name }) => name === 'Vasiliy')) // еще более упрощенная запись, но лучше прошлая
+console.log(users.findLastIndex(({name}) => name === 'Vasiliy')) // можно и с последнего
 
 // Проверка наличия элемента в массиве
 const pricess = [100, 200, 444, 500, 444, 777]
