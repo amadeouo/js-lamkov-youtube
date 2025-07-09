@@ -127,8 +127,7 @@ console.log(sortedNames)
 
 const numbers = [8, 4, 500]
 const sortNumb = [...numbers].sort() // => [4, 500, 8] не правильно 
-const sortedNumbers = [...numbers].sort((a, b) => a - b)
-
+const sortedNumbers = [...numbers].sort((a, b) => a - b) 
 
 
 
