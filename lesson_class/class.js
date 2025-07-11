@@ -22,7 +22,7 @@ class Student {
         return `г. ${this.#city}`
     }
 
-    static logAge() { // можно использовать через Student.country, 
+    static logAge() { // можно использовать через имя самого класса, а не через объект созданный через класс
         console.log('Country: Russia') // нельзя при static обращаться через this
     }
     
@@ -35,7 +35,7 @@ const secondStudent = new Student('Петя', 18)
 console.log('firstStudent:', firstStudent)
 console.log('secondStudent:', secondStudent)
 
-firstStudent.city = 'Москва'
+firstStudent.city = 'москва'
 
 console.log(firstStudent.city) // => Москва
 console.log(firstStudent._someSecretAction) // можно применять вне классов, но мы все равно не используем это
