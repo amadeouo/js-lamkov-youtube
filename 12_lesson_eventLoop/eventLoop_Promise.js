@@ -163,4 +163,6 @@ makeRequestt(`/api/sellers/${sellerIds}`)
 try {
     const seller = await makeRequestt(`/api/products/${sellerIds}`)
     const firstProductId = seller.productIds[0]
+} catch (error) {
+    console.log(error)
 }
