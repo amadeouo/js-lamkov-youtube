@@ -163,12 +163,4 @@ makeRequestt(`/api/sellers/${sellerIds}`)
 try {
     const seller = await makeRequestt(`/api/products/${sellerIds}`)
     const firstProductId = seller.productIds[0]
-
-    const product = await makeRequestt(`/api/products/${firstProductId}`)
-    const firstReviewId = seller.reviewIds[0]
-
-    const review = await makeRequestt(`/api/products/${firstReviewId}`)
-    const authorName = seller.author.name
-} catch (error) {
-    console.log(error)
 }
