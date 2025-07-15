@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/14_lesson_DOM/dom_properties.js" defer></script>
+</head>
+
+<body>
+    <form action="" class="form" qwerty="!!!" data-some-value="123">
+        <input type="text" class="form__input" name="login" placeholder="Логин">
+        <input type="text" class="form__input" name="password" type="password" placeholder="Пароль">
+        <button class="form__button" type="submit">Войти</button>
+    </form>
+
+    <div 
+    class="slider"
+    data-js-slider='{
+        "direction": "vertical",
+        "loop": true,
+        "slidesPerView": 1
+    }'
+    >
+        <ul class="slider__list" data-js-slider-list>
+            <li class="slider__slide" data-js-slider-slide></li>
+            <li class="slider__slide" data-js-slider-slide></li>
+            <li class="slider__slide" data-js-slider-slide></li>
+        </ul>
+    </div>
+
+    <div class="slider" data-js-slider="example">
+        <ul class="slider__list" data-js-slider-list>
+            <li class="slider__slide" data-js-slider-slide></li>
+            <li class="slider__slide" data-js-slider-slide></li>
+            <li class="slider__slide" data-js-slider-slide></li>
+        </ul>
+    </div>
+
+    
+
+</body>
+
+</html>
