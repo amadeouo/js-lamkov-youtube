@@ -1,0 +1,14 @@
+.box {
+    width: 100px;
+    border: 1px solid red;
+}
+
+.box::after {
+    content: 'Привет';
+    text-decoration: underline;
+}
+
+.red { background-color: red; }
+
+.big { width: 200px; height: 200px; }
+
