@@ -12,8 +12,8 @@
 // initTabs()
 
 // import logCat, {a, b, c} from "./constants.js";
-import * as constants from './constants/folder-1/folder-2/constants.js'
-import { num } from './sayHi.js'
+import * as constants from './constants/folder-1/folder-2/23_constants.js'
+import { num } from './23_sayHi.js'
 
 
 

@@ -34,7 +34,7 @@ setTimeout(() => {
     })
 }, 2000)
 
-window.scrollBy({ top: 200, behavior: 'smooth' }) // Скролл на определенное количество (отличие в том, что тут на сколько еще снизится
+window.scrollBy({ top: 200, behavior: 'smooth' }) // Скролл на определенное количество
 
 const reviewsSectionElement = document.querySelector('#reviews')
 reviewsSectionElement.scrollIntoView({ behavior: 'smooth' }) // Скроллит до определенного элемента
