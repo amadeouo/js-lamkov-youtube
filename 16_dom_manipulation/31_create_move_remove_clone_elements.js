@@ -6,7 +6,7 @@ console.log(firstParagraphElement.textContent)
 
 /* Чтение и изменение текстового содержимого */
 firstParagraphElement.textContent = 'Обновленный первый параграф' // Изменение текста
-firstParagraphElement.textContent += 'Обновленный первый параграф' // Добавление текста к уже имеюшимся
+firstParagraphElement.textContent += 'Обновленный первый параграф' // Добавление текста к уже имеющимся
 
 boxElement.textContent = 'Обновленный текст' // пропадут все параграфы
 
@@ -23,7 +23,7 @@ console.log(boxElement.innerHTML) // HTML содержимое
 console.log(boxElement.outerHTML) // HTML содержимое включая сам элемент
 
 /* Вставка элементов */
-const newParagraphElement = document.createElement('p')
+const newParagraphElement = document.createElement('p') // создание тега
 newParagraphElement.textContent = 'Четвертый параграф'
 newParagraphElement.classList.add('paragraph-4')
 boxElement.append(newParagraphElement) // добавление в конец
@@ -32,7 +32,7 @@ boxElement.prepend(newParagraphElement) // добавление в начало
 boxElement.after(newParagraphElement) // добавление после элемента
 boxElement.before(newParagraphElement) // добавление перед элементом
 
-boxElement.replaceWith(newParagraphElement)
+boxElement.replaceWith(newParagraphElement) // замена элемента
 
 /* Особенности методов */
 const firstBoxElement = document.querySelector('.box-1')
