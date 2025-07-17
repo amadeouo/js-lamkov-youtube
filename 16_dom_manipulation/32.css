@@ -1,0 +1,26 @@
+.box-1 {
+    margin-top: 20px;
+    width: 300px;
+    height: 125px;
+    background-color: darkslateblue;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+}
+
+.box-2 {
+    width: 200px;
+    height: 75px;
+    background-color: darkgoldenrod;
+    border: 2px solid black;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+.box-3 {
+    width: 100px;
+    height: 25px;
+    background-color: darkcyan;
+    border: 2px solid black;
+    margin-left: 60px;
+    border-radius: 5px;   
+}
