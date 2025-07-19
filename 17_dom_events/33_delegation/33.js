@@ -19,7 +19,7 @@ const onTodoItemClick = (todoItemElement) => { // Функция добавле�
 // })
 
 
-/* Тут будет лучше делагировать на родительский элемент */
+/* Тут будет лучше делегировать на родительский элемент */
 const ulElement = document.querySelector('#firstTodo')
 ulElement.addEventListener('click', (event) => {
     const todoItemElem = event.target.closest('.todo__item')

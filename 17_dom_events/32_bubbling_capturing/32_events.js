@@ -60,7 +60,7 @@ eventButton.addEventListener('click', (event) => {
 
 /* Всплытие и погружение */
 
-/* Всплытие */
+/* Всплытие (bubbling)*/
 const firstBoxElement = document.querySelector('.box-1')
 const secondBoxElement = document.querySelector('.box-2')
 const thirdBoxElement = document.querySelector('.box-3')
