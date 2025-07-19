@@ -1,0 +1,22 @@
+.todo__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+}
+
+.todo__item {
+    padding: 5px;
+    border: 4px solid;
+    cursor: pointer;
+}
+
+.todo__item:hover {
+    border-color: royalblue;
+}
+
+.todo__item.is_completed {
+    background-color: darkseagreen;
+}
+
+
