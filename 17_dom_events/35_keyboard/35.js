@@ -84,6 +84,7 @@ inputElement.addEventListener('change', (event) => {
 document.addEventListener('cut', (event) => { // вырезать
     console.log(event)
     console.log(event.clipboardData.getData('text/plain')) // сработает нормально только у paste
+    
     navigator.clipboard.readText().then((clipboardText) => { // лучше это, чем код выше
         console.log(clipboardText)
     })
@@ -92,7 +93,8 @@ document.addEventListener('cut', (event) => { // вырезать
 document.addEventListener('copy', (event) => { // копировать 
     console.log(event)
     console.log(event.clipboardData.getData('text/plain')) // сработает нормально только у paste
-        navigator.clipboard.readText().then((clipboardText) => { // лучше это, чем код выше
+
+    navigator.clipboard.readText().then((clipboardText) => { // лучше это, чем код выше
         console.log(clipboardText)
     })
 })
