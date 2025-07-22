@@ -1,0 +1,7 @@
+form[actions="/registration"] {
+    margin: 0;
+}
+
+form[actions="/auth"] {
+    margin: 0;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./37.js" defer></script>
+    <link rel="stylesheet" href="./37.css">
+</head>
+
+<body>
+    <form id="regForm" action="/registration" method="post">
+        <p class="field">
+            <label for="login">Логин</label>
+            <input id="login">
+        </p>
+        <p class="field">
+            <label for="password">Пароль</label>
+            <input id="password">
+        </p>
+        <p class="field">
+            <label for="about">О себе</label>
+            <input id="about">
+        </p>
+        <fieldset class="radios">
+            <label for="sex-male">Мужской</label>
+            <input 
+            class="radios__control"
+            type="radio" 
+            id="sex-male" 
+            name="gender"
+            value="Мужской"
+            >
+            <label for="sex-female">Женский</label>
+            <input 
+            type="radio" 
+            id="sex-female" 
+            name="gender"
+            checked
+            value="Женский"
+            >
+        </fieldset>
+        <div class="field checkbox">
+            <label for="checkbox">Согласен на все</label>
+            <input type="checkbox" id="checkbox" name="agreement">
+        </div>
+        <button type="submit">Регистрация</button>
+    </form>
+
+    <!-- <form id="authForm" action="/auth" method="post">
+        <p class="field">
+            <label for="login-auth">Логин</label>
+            <input id="login-auth">
+        </p>
+        <p class="field">
+            <label for="password-auth">Пароль</label>
+            <input id="password-auth">
+        </p>
+    </form> -->
+
+    <div class="city-selection">
+        <label for="city">Ваш город</label>
+        <select name="city" id="city" form="reg-form">
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Антананариву">Антананариву</option>
+            <option value="Бандар-Сери-Бегаван">Бандар-Сери-Бегаван</option>
+            <option value="Лланвайр Пуллгвингилл">Лланвайр Пуллгвингилл</option>
+        </select>
+    </div>
+</body>
+
+</html>
