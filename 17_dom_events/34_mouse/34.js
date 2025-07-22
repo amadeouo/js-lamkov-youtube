@@ -31,7 +31,7 @@ buttonElement.addEventListener('mouseenter', (event) => {
 })
 
 /* Увели с элемента или с его вложенного дочернего элемента */
-buttonElement.addEventListener('mouseover', (event) => {
+buttonElement.addEventListener('mouseleave', (event) => {
     console.log('Ку')
 })
 
@@ -50,7 +50,7 @@ buttonPressElement.addEventListener('mouseup', (event) => {
     console.log('2. отпускание клавиши мыши', event.target, event.currentTarget)
 })
 
-/* Клик (если увести от элемента, то отменится) */
+/* Клик */
 buttonPressElement.addEventListener('click', (event) => {
     console.log('3. Клик', event.target, event.currentTarget)
 })
