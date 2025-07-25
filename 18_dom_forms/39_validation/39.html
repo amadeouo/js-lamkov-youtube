@@ -32,7 +32,7 @@
             minlength="8"
             maxlength="16"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
-            title="Пароль должен быть длиной от 8 до 16 символов, включать как миниму одну цифру, одну букву в нижнем и одну букву в верхнем регистре"
+            title="Пароль должен быть длиной от 8 до 16 символов, включать как минимум одну цифру, одну букву в нижнем и одну букву в верхнем регистре"
             aria-errormessage="password-errors"
             >
             <span class="field__errors" id="password-errors" data-js-form-field-errors></span>
@@ -78,6 +78,7 @@
             required
             aria-errormessage="agreement-errors"
             >
+            <label class="field__label checkbox__label" for="agreement">Согласен на всё</label>
             <span class="field__errors" id="agreement-errors" data-js-form-field-errors></span>
         </div>
         <button type="submit">Регистрация</button>
