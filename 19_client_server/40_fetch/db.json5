@@ -1,0 +1,17 @@
+{
+  posts: [
+    { id: "1", title: "a title", views: 100 },
+    { id: "2", title: "another title", views: 200 },
+    { id: "3", title: "blabla", views: 0 },
+    { id: "4", title: "bla-bla", views: 0 },
+    { id: "5", title: "da", views: 0 },
+    { id: "6", title: "blads", views: 0 },
+    { id: "7", title: "Маша", views: 0 },
+    { id: "12", title: "123312", views: 0 },
+  ],
+  comments: [
+    { id: "1", text: "a comment about post 1", postId: "1" },
+    { id: "2", text: "another comment about post 1", postId: "1" },
+  ],
+  profile: { name: "typicode" },
+}
