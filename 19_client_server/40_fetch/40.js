@@ -29,8 +29,7 @@ createPostFormElement.addEventListener("submit", (event) => {
   })
     .then((response) => response.json())
     .then((json) => console.log(json))
-});
-
+})
 /* Поиск поста */
 loadPostFormElement.addEventListener("submit", (event) => {
   event.preventDefault()

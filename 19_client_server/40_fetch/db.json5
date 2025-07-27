@@ -8,6 +8,8 @@
     { id: "6", title: "blads", views: 0 },
     { id: "7", title: "Маша", views: 0 },
     { id: "12", title: "123312", views: 0 },
+    { id: "12", title: "mknn, ,", views: 0 },
+    { id: "101", title: "gcycjgc", views: 0 },
   ],
   comments: [
     { id: "1", text: "a comment about post 1", postId: "1" },
