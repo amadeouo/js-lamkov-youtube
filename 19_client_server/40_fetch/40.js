@@ -93,3 +93,16 @@ searchPostsWithLetterElements.addEventListener('submit', (event) => {
         .join('')
     })
 })
+
+
+/* Альтернативный вариант через title_like^ */
+searchPostsWithLetterElements.addEventListener('submit', (event) => {
+  event.preventDefault()
+  
+  fetch(`http://localhost:3000/posts?title_like^${letterInputElements.value}`) 
+    .then((response) => response.json())
+    .then((json) => { json
+      .map(({ id }) => `<p>${id}</p>`)
+      .join('')
+    })
+})
