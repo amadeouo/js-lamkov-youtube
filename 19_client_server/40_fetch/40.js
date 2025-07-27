@@ -4,6 +4,8 @@ const resultElement = document.querySelector(".result")
 const createPostFormElement = document.querySelector(".create-post-form")
 const searchPostFormElements = document.querySelector('.search-posts-form')
 const postViewsInputElements = document.querySelector('#post-views')
+const searchPostsWithLetterElements = document.querySelector('.search-posts-starts-with-form')
+const letterInputElements = document.querySelector('#letter-starts')
 
 
 /* Создание поста */
@@ -74,5 +76,20 @@ searchPostFormElements.addEventListener('submit', (event) => {
       resultElement.innerHTML = json // вставляем в результат по каждому из посту элемент в html
         .map(({ title, views }) => `<p>${title}, просмотров ${views}</p>`)
         .join('') // разделяем массив, полученный из map
+    })
+})
+
+
+/* Все посты начинающиеся с символов */
+searchPostsWithLetterElements.addEventListener('submit', (event) => {
+  event.preventDefault()
+  
+  fetch('http://localhost:3000/posts')
+    .then((response) => response.json())
+    .then((json) => {
+      const filteredJson = json.filter((post) => post.title && post.title[0].toLowerCase() === letterInputElements.value.toLowerCase())
+      resultElement.innerHTML = filteredJson
+        .map(({ id }) => `<p>${id}</p>`)
+        .join('')
     })
 })
