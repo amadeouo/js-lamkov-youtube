@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./42.css">
+  <script src="./42.js" defer></script>
+</head>
+<body>
+  <h1>Главная</h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="./">Главная</a>
+      </li>
+      <li>
+        <a href="./catalog.html">Каталог</a>
+      </li>
+      <li>
+        <a href="./about.html">О нас</a>
+      </li>
+    </ul>
+  </nav>
+
+  <button id="back-button">Назад</button>
+  <button id="forward-button">Вперед</button>
+  <button id="addHistoryStep">Добавить запись в историю сессии</button>
+  <button id="lookHistory">Посмотреть историю сессии</button>
+
+  <form class="filter">
+    <p>
+      <label for="name">Поиск по имени товара</label>
+      <input id="name" name="name">
+    </p>
+
+    <p>
+      <label for="min">Минимальная цена</label>
+      <input type="number" id="min" name="minPrice" value="0">
+    </p>
+
+    <p>
+      <label for="max">Максимальная цена</label>
+      <input type="number" id="max" name="maxPrice" value="10000">
+    </p>
+
+    <button type="submit">Найти</button>
+  </form>
+
+</body>
+</html>
